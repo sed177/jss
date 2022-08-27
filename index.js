@@ -188,11 +188,32 @@
 // }
 // push добавить в конец массив; pop - удаляет из конца массива; добавить в начало массива - unshift; удаляет из конца массива - shift
 
+// for (i= 0; i< names.length; i++) {
+//     let currentName = names[i]
+//     let firstLetter= currentName[0]
+//     let lastLetter= currentName[currentName.length-1]
+//     let nameLength= currentName.length
+//     console.log(i+1 + ": " + firstLetter + ", " lastLetter, nameLength    );
+// }
+// console.log(names[names.length -1]);
+// let Alibek = names[names.length -1]
+// console.log(Alibek);
 let names = ["Adam", "Lee", "Movsar", "Kazbek", "Alibek"]
-for (i= 0; i< names.length; i++) {
-    let currentName = names[i]
-    let firstLetter= currentName[0]
-    let lastLetter= currentName[currentName.length-1]
-    let nameLength= currentName.length
-    console.log(currentName, firstLetter, lastLetter, nameLength);
+let upperCaseNames = []
+for (let i=0; i < names.length; i++){
+    if(i % 2 === 0) {
+    upperCaseNames.push(names[i].toUpperCase())}
+    else if (i % 2 === 1) {
+        upperCaseNames.push(names[i].toLowerCase())
+    }
+    console.log(upperCaseNames);
 }
+//     let x = names [i]
+//     upperCaseNames.push(x.toUpperCase())
+// }
+//     let currentName = names[i]
+//     let currentNametouppercase = currentName.toUpperCase()
+//     upperCaseNames.push(currentNametouppercase)
+//     console.log(upperCaseNames);
+// 
+console.log(upperCaseNames);
